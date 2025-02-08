@@ -33,24 +33,24 @@ export default function Navbar() {
                 height={40}
                 className="object-contain"
               />
-              <span className="text-[#EBB540] text-2xl font-bold font-gudea">BONANZA</span>
+              <span className="text-[#E59D00] text-2xl font-bold font-gudea">BONANZA</span>
             </Link>
           </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-[#EBB540] transition-colors font-gudea">Home</Link>
-            <Link href="/about" className="text-gray-700 hover:text-[#EBB540] transition-colors font-gudea">About Us</Link>
-            <Link href="/products" className="text-gray-700 hover:text-[#EBB540] transition-colors font-gudea">Products</Link>
-            <Link href="/news" className="text-gray-700 hover:text-[#EBB540] transition-colors font-gudea">News</Link>
-            <Link href="/find-us" className="text-gray-700 hover:text-[#EBB540] transition-colors font-gudea">Find Us</Link>
-            <Link href="/contact" className="text-gray-700 hover:text-[#EBB540] transition-colors font-gudea">Contact Us</Link>
+            <Link href="/" className="text-gray-700 hover:text-[#E59D00] transition-colors font-gudea">Home</Link>
+            <Link href="/about" className="text-gray-700 hover:text-[#E59D00] transition-colors font-gudea">About Us</Link>
+            <Link href="/products" className="text-gray-700 hover:text-[#E59D00] transition-colors font-gudea">Products</Link>
+            <Link href="/news" className="text-gray-700 hover:text-[#E59D00] transition-colors font-gudea">News</Link>
+            <Link href="/find-us" className="text-gray-700 hover:text-[#E59D00] transition-colors font-gudea">Find Us</Link>
+            <Link href="/contact" className="text-gray-700 hover:text-[#E59D00] transition-colors font-gudea">Contact Us</Link>
             
             {/* Language Selector */}
             <div className="relative">
               <button 
                 onClick={() => setIsLangOpen(!isLangOpen)}
-                className="flex items-center text-gray-700 hover:text-[#EBB540] transition-colors font-gudea"
+                className="flex items-center text-gray-700 hover:text-[#E59D00] transition-colors font-gudea"
               >
                 Language <ChevronDown className="ml-1 h-4 w-4" />
               </button>
@@ -62,7 +62,7 @@ export default function Navbar() {
                       <a
                         key={lang.code}
                         href="#"
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#EBB540] hover:text-white font-gudea"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-[#E59D00] hover:text-white font-gudea"
                       >
                         {lang.name}
                       </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
             {/* Search Button */}
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
-              className="text-gray-700 hover:text-[#EBB540] transition-colors"
+              className="text-gray-700 hover:text-[#E59D00] transition-colors"
             >
               <Search className="h-5 w-5" />
             </button>
@@ -85,13 +85,13 @@ export default function Navbar() {
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
-              className="text-gray-700 hover:text-[#EBB540]"
+              className="text-gray-700 hover:text-[#E59D00]"
             >
               <Search className="h-5 w-5" />
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-[#EBB540]"
+              className="text-gray-700 hover:text-[#E59D00]"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -105,7 +105,7 @@ export default function Navbar() {
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#EBB540] focus:border-transparent"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#E59D00] focus:border-transparent"
               />
             </div>
           </div>
@@ -115,18 +115,18 @@ export default function Navbar() {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link href="/" className="block text-gray-700 hover:text-[#EBB540] py-2 font-gudea">Home</Link>
-              <Link href="/about" className="block text-gray-700 hover:text-[#EBB540] py-2 font-gudea">About Us</Link>
-              <Link href="/products" className="block text-gray-700 hover:text-[#EBB540] py-2 font-gudea">Products</Link>
-              <Link href="/news" className="block text-gray-700 hover:text-[#EBB540] py-2 font-gudea">News</Link>
-              <Link href="/find-us" className="block text-gray-700 hover:text-[#EBB540] py-2 font-gudea">Find Us</Link>
-              <Link href="/contact" className="block text-gray-700 hover:text-[#EBB540] py-2 font-gudea">Contact Us</Link>
+              <Link href="/" className="block text-gray-700 hover:text-[#E59D00] py-2 font-gudea">Home</Link>
+              <Link href="/about" className="block text-gray-700 hover:text-[#E59D00] py-2 font-gudea">About Us</Link>
+              <Link href="/products" className="block text-gray-700 hover:text-[#E59D00] py-2 font-gudea">Products</Link>
+              <Link href="/news" className="block text-gray-700 hover:text-[#E59D00] py-2 font-gudea">News</Link>
+              <Link href="/find-us" className="block text-gray-700 hover:text-[#E59D00] py-2 font-gudea">Find Us</Link>
+              <Link href="/contact" className="block text-gray-700 hover:text-[#E59D00] py-2 font-gudea">Contact Us</Link>
               
               {/* Mobile Language Selector */}
               <div className="relative py-2">
                 <button 
                   onClick={() => setIsLangOpen(!isLangOpen)}
-                  className="flex items-center text-gray-700 hover:text-[#EBB540] font-gudea"
+                  className="flex items-center text-gray-700 hover:text-[#E59D00] font-gudea"
                 >
                   Language <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
@@ -137,7 +137,7 @@ export default function Navbar() {
                       <a
                         key={lang.code}
                         href="#"
-                        className="block pl-4 py-2 text-sm text-gray-700 hover:text-[#EBB540] font-gudea"
+                        className="block pl-4 py-2 text-sm text-gray-700 hover:text-[#E59D00] font-gudea"
                       >
                         {lang.name}
                       </a>
